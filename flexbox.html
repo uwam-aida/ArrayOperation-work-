@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    .grid-container{
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+  grid-template-columns: auto;
+  gap: 5px;
+  background-color: #d7dade;
+  padding: 5px
+        }
+        .grid-container >div{
+background-color: white;
+font-size: 30px;
+padding:10px;
+text-align: center;
+        }
+      .sidebar-container{
+        grid-area: header;
+        text-align: left;
+      }
+      .sidebar{
+        grid-area: sidebar;
+        text-align: left;
+    
+      }
+      .main content{
+        grid-area: content;
+    
+    } 
+      .footer{
+        grid-area: footer;
+        
+
+      }
+        
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+</head>
+<div class="grid-container"> 
+<div> HEADER</div>
+<div> sidebar</div>
+<div></div>
+<div class="flex-container">
+    <p> <div>1</div> <div>2</div> </p>
+<p> <div>3</div> <div>4</div> </p>
+</div>
+
+</div>
+<body>
+    
+</body>
+</html>
